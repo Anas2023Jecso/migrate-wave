@@ -6,6 +6,9 @@
 html{
   scroll-behavior: smooth;
 }
+.popit{
+  margin-top: 5pc;
+}
 body {
   background-color: #e8dcfe;
   overflow-x: hidden;

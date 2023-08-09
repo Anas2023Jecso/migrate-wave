@@ -322,11 +322,13 @@ function Home() {
       <Section3 />
       <Section4 />
       <Section5 />
+      <div className="popit">
       <Accordion />
       <Accordion />
       <Accordion />
       <Accordion />
       <Accordion />
+      </div>
       <Section6 />
       <Footers />
     </div>
