@@ -79,7 +79,7 @@ function Nav() {
         <div className="Niss">
           <a href="">Bank Account</a>
         </div>
-        <div className="Contact">
+        <div className="Contact" onClick={() => navigate('/fiscal')}>
           <a href="">Fiscal Representative</a>
         </div>
       </div>

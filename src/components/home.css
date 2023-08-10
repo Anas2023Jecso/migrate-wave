@@ -433,6 +433,10 @@ body {
   font-weight: 600;
   font-size: 18px;
 }
+
+.logo img{
+  width: 70px;
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -479,6 +483,12 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+   .accordionc .button {
+   font-size: 18px !important; 
+  }
+.mainHeading{
+  font-size: 34px;
+}
   .section-one {
     padding: 0px;
   }
@@ -531,6 +541,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     background-color: white;
+    padding-bottom: 200px;
   }
   .head78 {
     font-size: 18px;
@@ -587,8 +598,17 @@ body {
   }
 }
 @media screen and (max-width: 425px) {
+  .card .img img{
+    width: 50%;
+  }
+  .card .card-head {
+    font-size: 30px;
+  }
   .section-one .sub-body1 .div .mainHeading {
     font-size: 30px;
+  }
+  .logo img{
+    width: 50px;
   }
   .section-one .subHeading {
     font-size: 10px;
@@ -638,17 +658,36 @@ body {
   .op {
     margin: 0;
   }
+  span.iop{
+    font-size: 18px !important;
+  }
 }
 
 @media screen and (max-width: 375px) {
+  .card .img img{
+    width: 30%;
+  }
+  .card .card-head {
+    font-size: 18px;
+  }
   .cards {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  span.iop{
+    font-size: 10px !important;
+  }
+  p.popito{
+    font-size: 10px;
   }
   .head3 {
     font-size: 18px;
   }
-  .heading6 {
-    font-size: 18px;
+  .heading6 { 
+    font-size: 18px !important;
   }
   .imgLogo {
     display: none;
@@ -659,4 +698,20 @@ body {
   .btn1{
     display: none;
   }
+}
+.sub-body1 {
+  padding: 0;
+  margin: 0;
+}
+.div{
+  padding: 50px;
+}
+.card{
+  margin-top: 20px;
+}
+.card div{
+  margin: 2px;
+  padding: 5px;
+}
+@media screen and(max-width: 768px) {
 }

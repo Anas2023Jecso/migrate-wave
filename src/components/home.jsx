@@ -9,7 +9,7 @@ function Nav() {
   return (
     <div className="navbar">
       <div className="logo">
-      <img width="70px" src="https://res.cloudinary.com/dk3wwfwyv/image/upload/v1691593026/fvnebfzdzbrlxfvy2pdk.png"  alt="" />
+      <img  src="https://res.cloudinary.com/dk3wwfwyv/image/upload/v1691593026/fvnebfzdzbrlxfvy2pdk.png"  alt="" />
       </div>
       <div className="links">
         <div className="Home" onClick={() => navigate('/')}>
@@ -32,7 +32,7 @@ function Nav() {
         <div className="Niss">
           <a href="">Bank Account</a>
         </div>
-        <div className="Contact">
+        <div className="Contact" onClick={() => navigate('/fiscal')}>
           <a href="">Fiscal Representative</a>
         </div>
       </div>
@@ -212,12 +212,12 @@ function Accordion() {
   
   console.log(toggle);
   return (
-      <div className="accordion trty">
+      <div className="accordionc">
   
           <button 
           onClick={toggleState}
           className="accordion-visible">
-              <span>Lorem ipsum dolor sit amet.</span>
+              <span className="iop">Lorem ipsum dolor sit amet.</span>
               <img 
               className={toggle && "active"}
               src={Chevron} />
@@ -228,7 +228,7 @@ function Accordion() {
           style={{height: toggle ? `${heightEl}` : "0px"}}
           ref={refHeight}
           >
-              <p aria-hidden={toggle ? "true" : "false"}>
+              <p aria-hidden={toggle ? "true" : "false"} className="popito">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, suscipit quae maiores sunt ducimus est dolorem perspiciatis earum corporis unde, dicta quibusdam aut placeat dignissimos distinctio vel quo eligendi ipsam.
               </p>
           </div>
@@ -323,6 +323,10 @@ function Home() {
       <Section4 />
       <Section5 />
       <div className="popit">
+      <div className="titles">
+      <div className="head2">FAQs</div>
+      <div className="sub-txt2">The Fastest Company Ever</div>
+    </div>
       <Accordion />
       <Accordion />
       <Accordion />

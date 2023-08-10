@@ -1,5 +1,5 @@
 import { useState , useRef , useEffect} from 'react';
-import './nif.css'
+import './fiscal.css'
 import Chevron from './chevron.svg'
 import { useNavigate } from "react-router-dom";
 
@@ -35,7 +35,7 @@ function Nav() {
           <a href="#About">About</a>
         </div>
         <div className="Nif"  onClick={() => navigate('/nif')}>
-          <a  className="active">Nif</a>
+          <a >Nif</a>
         </div>
         <div className="Niss" onClick={() => navigate('/niss')}>
           <a href={navigate('niss')}>Niss</a>
@@ -44,7 +44,7 @@ function Nav() {
           <a href="">Bank Account</a>
         </div>
         <div className="Contact" onClick={() => navigate('/fiscal')}>
-          <a href="">Fiscal Representative</a>
+          <a href=""  className="active">Fiscal Representative</a>
         </div>
       </div>
     </div>
@@ -56,7 +56,7 @@ function MainTitles() {
     <div className="sub-body1" id="home">
       <div className="div">
         <div className="mainHeading">
-          N I F
+          Fiscal Reprentation
         </div>
         <div className="subHeading">We Have Fastest Services Ever</div>
         <div className="btn2">
@@ -315,7 +315,7 @@ function Footers() {
  );
 }
 
-function Nif() {
+function Fiscal() {
   return (
     <div>
       <Section1 />
@@ -335,4 +335,4 @@ function Nif() {
   );
 }
 
-export default Nif
+export default Fiscal

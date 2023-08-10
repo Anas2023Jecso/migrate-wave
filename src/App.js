@@ -1,4 +1,5 @@
 import './App.css';
+import Fiscal from './components/fiscal';
 import Home from './components/home';
 import Nif from './components/nif';
 import Niss from './components/niss';
@@ -13,6 +14,7 @@ function App() {
         <Route path="home" element={<Home />} />
         <Route path="nif" element={<Nif />} />
         <Route path="niss" element={<Niss />} />
+        <Route path="fiscal" element={<Fiscal />} />
         <Route path="*" element={<Navigate to="home" replace={true} />} />
       </Routes>
     </div>
