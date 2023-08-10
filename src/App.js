@@ -12,10 +12,11 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="nif" element={<Nif />} />
         <Route path="niss" element={<Niss />} />
         <Route path="fiscal" element={<Fiscal />} />
-        <Route path="*" element={<Navigate to="home" replace={true} />} />
+        <Route path="*" element={<Navigate to="/" replace={true} />} />
       </Routes>
     </div>
   );
